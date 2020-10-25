@@ -13,4 +13,9 @@ public class UtasSzallitoRepulo extends Repulogep implements IPassanger {
     public int utasokSzama() {
         return this.utasokSzama;
     }
+
+    @Override
+    public String toString() {
+        return String.format("Utas szállító %s\nUTASOK SZÁMA: %d fő", super.toString(), this.utasokSzama);
+    }
 }

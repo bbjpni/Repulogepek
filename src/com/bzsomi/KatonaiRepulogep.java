@@ -19,4 +19,9 @@ public class KatonaiRepulogep extends Repulogep implements IPassanger, IFreighte
     public int utasokSzama() {
         return this.utasokSzama;
     }
+
+    @Override
+    public String toString() {
+        return String.format("Katonai %s\nUTASOK SZÁMA: %d fő\nCSOMAGOK SÚLYA: %.2f kg", super.toString(), this.utasokSzama, this.csomagokSulya);
+    }
 }
